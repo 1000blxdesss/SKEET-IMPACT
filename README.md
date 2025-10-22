@@ -3,6 +3,6 @@ Visual Tabs (and boobs resize) has been removed (чтобы не пастили)
 [Fun gif](https://github.com/user-attachments/assets/9e178d3b-9975-4818-aba8-7c4b9ccf4b0a)
 
 
-
++HitSound xd
 https://github.com/user-attachments/assets/322d65c9-6f5f-47d8-9a89-c453e7f4a395
 
