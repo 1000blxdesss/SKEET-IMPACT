@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{12df9941-15c3-49ac-8e43-50e2cdba01b9}</ProjectGuid>
+    <RootNamespace>GenshinDump</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;GENSHINDUMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;GENSHINDUMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;GENSHINDUMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;GENSHINDUMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>$(SolutionDir)GenshinDump\MinHook\lib\libMinHook.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GUI\ImGui\freetype\config\ftconfig.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\ftheader.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\ftmodule.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\ftoption.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\ftstdlib.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\integer-types.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\mac-support.h" />
+    <ClInclude Include="GUI\ImGui\freetype\config\public-macros.h" />
+    <ClInclude Include="GUI\ImGui\freetype\freetype.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftadvanc.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftbbox.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftbdf.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftbitmap.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftbzip2.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftcache.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftchapters.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftcid.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftcolor.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftdriver.h" />
+    <ClInclude Include="GUI\ImGui\freetype\fterrdef.h" />
+    <ClInclude Include="GUI\ImGui\freetype\fterrors.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftfntfmt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftgasp.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftglyph.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftgxval.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftgzip.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftimage.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftincrem.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftlcdfil.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftlist.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftlogging.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftlzw.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftmac.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftmm.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftmodapi.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftmoderr.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftotval.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftoutln.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftparams.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftpfr.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftrender.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftsizes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftsnames.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftstroke.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftsynth.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftsystem.h" />
+    <ClInclude Include="GUI\ImGui\freetype\fttrigon.h" />
+    <ClInclude Include="GUI\ImGui\freetype\fttypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ftwinfnt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\autohint.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\cffotypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\cfftypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\compiler-macros.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftcalc.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftdebug.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftdrv.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\fthash.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftmemory.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftmmtypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftobjs.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftpsprop.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftrfork.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftserv.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftstream.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\fttrace.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\ftvalid.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\psaux.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\pshints.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svcfftl.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svcid.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svkern.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svmetric.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svmm.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svotval.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svprop.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\sfnt.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\svginterface.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\t1types.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\tttypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\internal\wofftypes.h" />
+    <ClInclude Include="GUI\ImGui\freetype\otsvg.h" />
+    <ClInclude Include="GUI\ImGui\freetype\t1tables.h" />
+    <ClInclude Include="GUI\ImGui\freetype\ttnameid.h" />
+    <ClInclude Include="GUI\ImGui\freetype\tttables.h" />
+    <ClInclude Include="GUI\ImGui\freetype\tttags.h" />
+    <ClInclude Include="GUI\ImGui\ft2build.h" />
+    <ClInclude Include="GUI\ImGui\ImGuiInclude.h" />
+    <ClInclude Include="GUI\ImGui\ImGuiNotify.hpp" />
+    <ClInclude Include="GUI\ImGui\imgui_freetype.h" />
+    <ClInclude Include="GUI\ImGui\imgui_impl_dx12.h" />
+    <ClInclude Include="GUI\ImGui\imgui_stdlib.h" />
+    <ClInclude Include="kiero\kiero.h" />
+    <ClInclude Include="Logger\Logger.h" />
+    <ClInclude Include="MinHook\include\MinHook.h" />
+    <ClInclude Include="UnityUtils\il2cpp-api-types.h" />
+    <ClInclude Include="utils%28not using%29\obfa.h" />
+    <ClInclude Include="utils%28not using%29\pattern.h" />
+    <ClInclude Include="utils%28not using%29\stb_image.h" />
+    <ClInclude Include="utils\obfa.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
