@@ -22,28 +22,6 @@
 
 //offsets
 enum Offsets {
-    TypeGetName_ = 0x3F4FA0, // 0x1403F4FA0
-    ClassGetType_ = 0x3F42C0, // 0x1403F42C0
-    ClassGetNamespace_ = 0x3F41B0, // 0x1403F41B0
-    ClassGetFlags_ = 0x3F4250, // 0x1403F4250
-    Il2CppClassIsValueType = 0x3F4240, // 0x1403F4240
-    ClassIsEnum = 0x3F4390, // 0x1403F4390
-    ClassGetParent_ = 0x3F41F0, // 0x1403F41F0
-    ClassGetName_ = 0x3F41A0, // 0x1403F41A0
-    ClassGetMethods = 0x3F4160, // 0x1403F4160
-    MethodGetReturnType = 0x4763C0, // 0x1404763C0
-    MethodGetName = 0x3F4AC0, // 0x1403F4B2F
-    MethodGetParamCount = 0x3F4B10, // 0x1403F4B10
-    il2cpp_method_get_param1 = 0x3F4B20, // 0x1403F4B20
-    MethodGetParamName = 0x3F4C20, // 0x1403F4C20
-    ClassGetFields = 0x45E900, // 0x14045E900
-    FieldGetFlags = 0x3F4520, // 0x1403F4520
-    FieldGetType = 0x3F4560, // 0x1403F43A0
-    FieldGetName = 0x3F4510, // 0x1403F4510
-    FieldStaticGetValue = 0x46AB40, // 0x14046AB40
-    FieldGetOffset = 0x3F4550, // 0x1403F4550
-    FromIl2CppType1 = 0x3F42B0,
-    ClassFromName = 0x4AE0A0,
     OFJHCHDOJGL = 0xb3f39f0,
     Find = 0x11127fd0,
     GetChild = 0x111445e0,
@@ -2217,4 +2195,5 @@ BOOL APIENTRY DllMain(HMODULE module, DWORD reason, LPVOID reserved) {
         CreateThread(nullptr, 0, MainThread, module, 0, nullptr);
     }
     return TRUE;
+
 }
