@@ -1,4 +1,5 @@
-[!!!](https://github.com/1000blxdesss/Genshin-Impact-Dump-collection)
+[!!!Click!!!](https://github.com/1000blxdesss/Genshin-Impact-Dump-collection)
+
 Visual Tabs (and boobs resize) has been removed (чтобы не пастили)
 <img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/8b6ca0be-b0c2-4068-83d3-399464c3913a" />
 [Fun gif](https://github.com/user-attachments/assets/9e178d3b-9975-4818-aba8-7c4b9ccf4b0a)
